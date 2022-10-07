@@ -1,0 +1,295 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Consolas;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red106\green62\blue62;\red42\green0\blue255;\red212\green212\blue212;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs20 i)CREATIONATM\f1\lang9\par
+package\cf2\b0  dan;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  creationatm\{\cf0\par
+\cf2     \cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3 denomination\cf2 ;\cf0\par
+\cf2     \cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3 number\cf2 ;\cf0\par
+\cf2     \cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3 value\cf2 ;\cf0\par
+\cf2     \cf1\b public\cf2\b0   creationatm(\cf1\b int\cf2\b0  \cf4 denomination\cf2 , \cf1\b int\cf2\b0  \cf4 number\cf2 , \cf1\b int\cf2\b0  \cf4 value\cf2 ) \{\cf0\par
+\cf2         \cf1\b this\cf2\b0 .\cf3 denomination\cf2  = \cf4 denomination\cf2 ;\cf0\par
+\cf2         \cf1\b this\cf2\b0 .\cf3 number\cf2  = \cf4 number\cf2 ;\cf0\par
+\cf2         \cf1\b this\cf2\b0 .\cf3 value\cf2  = \cf4 value\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b int\cf2\b0  getDenomination() \{\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf3 denomination\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b int\cf2\b0  getNumber() \{\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf3 number\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b int\cf2\b0  getValue() \{\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf3 value\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setDenomination(\cf1\b int\cf2\b0  \cf4 denomination\cf2 ) \{\cf0\par
+\cf2         \cf1\b this\cf2\b0 .\cf3 denomination\cf2  = \cf4 denomination\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setNumber(\cf1\b int\cf2\b0  \cf4 number\cf2 ) \{\cf0\par
+\cf2         \cf1\b this\cf2\b0 .\cf3 number\cf2  = \cf4 number\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setValue(\cf1\b int\cf2\b0  \cf4 value\cf2 ) \{\cf0\par
+\cf2         \cf1\b this\cf2\b0 .\cf3 value\cf2  = \cf4 value\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  String toString() \{\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf5 "CreationATM\{"\cf2  +\cf0\par
+\cf2                 \cf5 "denomination="\cf2  + \cf3 denomination\cf2  +\cf0\par
+\cf2                 \cf5 ", number="\cf2  + \cf3 number\cf2  +\cf0\par
+\cf2                 \cf5 ", value="\cf2  + \cf3 value\cf2  +\cf0\par
+\cf2                 \cf5 '\}'\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0\lang1033 ii)\cf2\f1 CustomerDetails\cf0\f0\par
+\cf1\b\f1 package\cf2\b0  dan;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  CustomerDetails \{\cf0\par
+\cf2     \cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3 AccNo\cf2 ;\cf0\par
+\cf2     \cf1\b private\cf2\b0  String \cf3 AccountHolder\cf2 ;\cf0\par
+\cf2     \cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3 Pin\cf2 ;\cf0\par
+\cf2     \cf1\b private\cf2\b0  \cf1\b int\cf2\b0  \cf3 AccountBalance\cf2 ;\cf0\par
+\par
+\cf2     \cf1\b public\cf2\b0  CustomerDetails(\cf1\b int\cf2\b0  \cf4 accNo\cf2 , String \cf4 accountHolder\cf2 , \cf1\b int\cf2\b0  \cf4 pin\cf2 , \cf1\b int\cf2\b0  \cf4 accountBalance\cf2 ) \{\cf0\par
+\cf2         \cf3 AccNo\cf2  = \cf4 accNo\cf2 ;\cf0\par
+\cf2         \cf3 AccountHolder\cf2  = \cf4 accountHolder\cf2 ;\cf0\par
+\cf2         \cf3 Pin\cf2  = \cf4 pin\cf2 ;\cf0\par
+\cf2         \cf3 AccountBalance\cf2  = \cf4 accountBalance\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b int\cf2\b0  getAccNo() \{\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf3 AccNo\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setAccNo(\cf1\b int\cf2\b0  \cf4 accNo\cf2 ) \{\cf0\par
+\cf2         \cf3 AccNo\cf2  = \cf4 accNo\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  String getAccountHolder() \{\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf3 AccountHolder\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setAccountHolder(String \cf4 accountHolder\cf2 ) \{\cf0\par
+\cf2         \cf3 AccountHolder\cf2  = \cf4 accountHolder\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b int\cf2\b0  getPin() \{\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf3 Pin\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setPin(\cf1\b int\cf2\b0  \cf4 pin\cf2 ) \{\cf0\par
+\cf2         \cf3 Pin\cf2  = \cf4 pin\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b int\cf2\b0  getAccountBalance() \{\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf3 AccountBalance\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setAccountBalance(\cf1\b int\cf2\b0  \cf4 accountBalance\cf2 ) \{\cf0\par
+\cf2         \cf3 AccountBalance\cf2  = \cf4 accountBalance\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  String toString() \{\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf5 "CustomerDetails\{"\cf2  +\cf0\par
+\cf2                 \cf5 "AccNo="\cf2  + \cf3 AccNo\cf2  +\cf0\par
+\cf2                 \cf5 ", AccountHolder='"\cf2  + \cf3 AccountHolder\cf2  + \cf5 '\\''\cf2  +\cf0\par
+\cf2                 \cf5 ", Pin="\cf2  + \cf3 Pin\cf2  +\cf0\par
+\cf2                 \cf5 ", AccountBalance="\cf2  + \cf3 AccountBalance\cf2  +\cf0\par
+\cf2                 \cf5 '\}'\cf2 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2\}\par
+\f0 iii)MAIN\par
+\cf1\b\f1 package\cf2\b0  dan;\cf0\par
+\par
+\cf1\b import\cf2\b0  java.util.Arrays;\cf0\par
+\cf1\b import\cf2\b0  java.util.List;\cf0\par
+\cf1\b import\cf2\b0  java.util.Scanner;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Real \{\cf0\par
+\cf2     \cf1\b static\cf2\b0  Real \cf3\i atmOperations\cf2\i0  = \cf1\b new\cf2\b0  Real();\cf0\par
+\cf2     \cf1\b static\cf2\b0  \highlight6 creationatm\highlight0 [] \cf3\i ATM\cf2\i0  = \{\cf0\par
+\cf2             \cf1\b new\cf2\b0  \highlight6 creationatm\highlight0 (2000,20,40000),\cf0\par
+\cf2             \cf1\b new\cf2\b0  \highlight6 creationatm\highlight0 (500,10,5000),\cf0\par
+\cf2             \cf1\b new\cf2\b0  \highlight6 creationatm\highlight0 (100,100,10000)\};\cf0\par
+\cf2     \cf1\b static\cf2\b0  List<\highlight6 creationatm\highlight0 > \cf3\i Atm_attributes\cf2\i0  = Arrays.\i asList\i0 (\cf3\i ATM\cf2\i0 );\cf0\par
+\cf2     \cf1\b static\cf2\b0  CustomerDetails[] \cf3\i customerDetails\cf2\i0  = \{\cf0\par
+\cf2             \cf1\b new\cf2\b0  CustomerDetails(101,\cf5 "Suresh"\cf2 ,2343,25234),\cf0\par
+\cf2             \cf1\b new\cf2\b0  CustomerDetails(102,\cf5 "Ganesh"\cf2 ,5432,34123),\cf0\par
+\cf2             \cf1\b new\cf2\b0  CustomerDetails(103,\cf5 "Magesh"\cf2 ,7854,26100),\cf0\par
+\cf2             \cf1\b new\cf2\b0  CustomerDetails(104,\cf5 "Naresh"\cf2 ,2345,80000),\cf0\par
+\cf2             \cf1\b new\cf2\b0  CustomerDetails(105,\cf5 "Harish"\cf2 ,1907,103400)\};\cf0\par
+\cf2     \cf1\b static\cf2\b0  List<CustomerDetails> \cf3\i CUS\cf2\i0  = Arrays.\i asList\i0 (\cf3\i customerDetails\cf2\i0 );\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b int\cf2\b0  checkBalance(\cf1\b int\cf2\b0  \cf4 accountNumber\cf2 ,\cf1\b int\cf2\b0  \cf4 pin\cf2 )\cf0\par
+\cf2     \{\cf0\par
+\cf2         \cf1\b for\cf2\b0 (CustomerDetails \cf4 customer\cf2  : \cf3\i CUS\cf2\i0 )\{\cf0\par
+\cf2             \cf1\b if\cf2\b0 (\cf4 customer\cf2 .getAccNo() == \cf4 accountNumber\cf2  && \cf4 customer\cf2 .getPin()==\cf4 pin\cf2 )\{\cf0\par
+\cf2                 \cf1\b return\cf2\b0  \cf4 customer\cf2 .getAccountBalance();\cf0\par
+\cf2             \}\cf0\par
+\cf2         \}\cf0\par
+\cf2         \cf1\b return\cf2\b0  0;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b boolean\cf2\b0  withDrawPossible(\cf1\b int\cf2\b0  \cf4 accountNumber\cf2 ,\cf1\b int\cf2\b0  \cf4 pin\cf2 ,\cf1\b int\cf2\b0  \cf4 amt\cf2 )\{\cf0\par
+\cf2         \cf1\b for\cf2\b0 (CustomerDetails \cf4 customer\cf2  : \cf3\i CUS\cf2\i0 )\{\cf0\par
+\cf2             \cf1\b if\cf2\b0 (\cf4 customer\cf2 .getAccNo() == \cf4 accountNumber\cf2  && \cf4 customer\cf2 .getPin()==\cf4 pin\cf2  && \cf4 customer\cf2 .getAccountBalance()>=\cf4 amt\cf2 )\{\cf0\par
+\cf2                 \cf4 customer\cf2 .setAccountBalance(\cf4 customer\cf2 .getAccountBalance()-\cf4 amt\cf2 );\cf0\par
+\cf2                 \cf1\b return\cf2\b0  \cf1\b true\cf2\b0 ;\cf0\par
+\cf2             \}\cf0\par
+\cf2         \}\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf1\b false\cf2\b0 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b boolean\cf2\b0  transferPossible(\cf1\b int\cf2\b0  \cf4 accountNumber\cf2 ,\cf1\b int\cf2\b0  \cf4 pin\cf2 ,\cf1\b int\cf2\b0  \cf4 amt\cf2 ,\cf1\b int\cf2\b0  \cf4 otherAccNo\cf2 )\{\cf0\par
+\cf2         \cf1\b for\cf2\b0 (CustomerDetails \cf4 customer\cf2  : \cf3\i CUS\cf2\i0 )\{\cf0\par
+\cf2             \cf1\b if\cf2\b0 (\cf4 customer\cf2 .getAccNo() == \cf4 accountNumber\cf2  && \cf4 customer\cf2 .getPin()==\cf4 pin\cf2 &&\cf4 customer\cf2 .getAccountBalance()>=\cf4 amt\cf2 )\{\cf0\par
+\cf2                 \cf4 customer\cf2 .setAccountBalance(\cf4 customer\cf2 .getAccountBalance()-\cf4 amt\cf2 );\cf0\par
+\cf2             \}\cf0\par
+\cf2         \}\cf0\par
+\cf2         \cf1\b for\cf2\b0 (CustomerDetails \cf4 customer\cf2  : \cf3\i CUS\cf2\i0 )\{\cf0\par
+\cf2             \cf1\b if\cf2\b0 (\cf4 customer\cf2 .getAccNo() == \cf4 otherAccNo\cf2 )\{\cf0\par
+\cf2                 \cf4 customer\cf2 .setAccountBalance(\cf4 customer\cf2 .getAccountBalance()+\cf4 amt\cf2 );\cf0\par
+\cf2                 \cf1\b return\cf2\b0  \cf1\b true\cf2\b0 ;\cf0\par
+\cf2             \}\cf0\par
+\cf2         \}\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf1\b false\cf2\b0 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b boolean\cf2\b0  correctPinOrNot(\cf1\b int\cf2\b0  \cf4 acc\cf2 )\cf0\par
+\cf2     \{\cf0\par
+\cf2         \cf1\b for\cf2\b0 (CustomerDetails \cf4 customer\cf2  : \cf3\i CUS\cf2\i0 )\{\cf0\par
+\cf2             \cf1\b if\cf2\b0 (\cf4 customer\cf2 .getAccNo() == \cf4 acc\cf2 )\{\cf0\par
+\cf2                 \cf1\b return\cf2\b0  \cf1\b true\cf2\b0 ;\cf0\par
+\cf2             \}\cf0\par
+\cf2         \}\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf1\b false\cf2\b0 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b boolean\cf2\b0  correctPinOrNot(\cf1\b int\cf2\b0  \cf4 acc\cf2 ,\cf1\b int\cf2\b0  \cf4 pin\cf2 )\cf0\par
+\cf2     \{\cf0\par
+\cf2         \cf1\b for\cf2\b0 (CustomerDetails \cf4 customer\cf2  : \cf3\i CUS\cf2\i0 )\{\cf0\par
+\cf2             \cf1\b if\cf2\b0 (\cf4 customer\cf2 .getAccNo() == \cf4 acc\cf2  && \cf4 customer\cf2 .getPin()==\cf4 pin\cf2 )\{\cf0\par
+\cf2                 \cf1\b return\cf2\b0  \cf1\b true\cf2\b0 ;\cf0\par
+\cf2             \}\cf0\par
+\cf2         \}\cf0\par
+\cf2         \cf1\b return\cf2\b0  \cf1\b false\cf2\b0 ;\cf0\par
+\cf2     \}\cf0\par
+\cf2     \cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf4 args\cf2 ) \{\cf0\par
+\cf2         \cf1\b int\cf2\b0  \cf4 amount\cf2 ;\cf0\par
+\cf2         Scanner \cf4\ul sc\cf2\ulnone  = \cf1\b new\cf2\b0  Scanner(System.\cf3\b\i in\cf2\b0\i0 );\cf0\par
+\cf2         \cf1\b boolean\cf2\b0  \cf4 condition\cf2  = \cf1\b true\cf2\b0 ;\cf0\par
+\cf2         \cf1\b int\cf2\b0  \cf4 otherAccNo\cf2 ;\cf0\par
+\cf2         \cf1\b int\cf2\b0  \cf4 accNo\cf2 ,\cf4 pin\cf2 ;\cf0\par
+\cf2         System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Welcome to ABCD Bank ATM"\cf2 );\cf0\par
+\cf2         \cf1\b while\cf2\b0  (\cf4 condition\cf2 ) \{\cf0\par
+\cf2             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "____Why do you use our ATM?____"\cf2 );\cf0\par
+\cf2             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "1 . Check Balance"\cf2 );\cf0\par
+\cf2             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "2 . Withdraw Amount"\cf2 );\cf0\par
+\cf2             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "3 . Transfer Amount"\cf2 );\cf0\par
+\cf2             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "4 . AMT Balance"\cf2 );\cf0\par
+\cf2             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "5 . Exit"\cf2 );\cf0\par
+\cf2             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "_______________________________"\cf2 );\cf0\par
+\cf2             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter Your Choice: "\cf2 );\cf0\par
+\cf2             \cf1\b int\cf2\b0  \cf4 c\cf2  = \cf4 sc\cf2 .nextInt();\cf0\par
+\cf2             \cf1\b switch\cf2\b0  (\cf4 c\cf2 ) \{\cf0\par
+\cf2                 \cf1\b case\cf2\b0  1-> \{\cf0\par
+\cf2                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "You have to chosen Balance Checking Option\\n"\cf2 );\cf0\par
+\cf2                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Please Enter Account Number: "\cf2 );\cf0\par
+\cf2                     \cf4 accNo\cf2  = \cf4 sc\cf2 .nextInt();\cf0\par
+\cf2                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter Your Four Digit Pin: "\cf2 );\cf0\par
+\cf2                     \cf4 pin\cf2  = \cf4 sc\cf2 .nextInt();\cf0\par
+\cf2                     \cf1\b if\cf2\b0  (\i correctPinOrNot\i0 (\cf4 accNo\cf2 , \cf4 pin\cf2 )) \{\cf0\par
+\cf2                         \cf1\b int\cf2\b0  \cf4 balance\cf2  = \cf3\i atmOperations\cf2\i0 .checkBalance(\cf4 accNo\cf2 , \cf4 pin\cf2 );\cf0\par
+\cf2                         System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "\\nYour Current Balance is "\cf2  + \cf4 balance\cf2 );\cf0\par
+\cf2                     \}\cf0\par
+\cf2                 \}\cf0\par
+\cf2                 \cf1\b case\cf2\b0  2->\{\cf0\par
+\cf2                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "You have to chosen Withdrawing Option\\n"\cf2 );\cf0\par
+\cf2                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Please Enter Account Number: "\cf2 );\cf0\par
+\cf2                     \cf4 accNo\cf2  = \cf4 sc\cf2 .nextInt();\cf0\par
+\cf2                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter Your Four Digit Pin: "\cf2 );\cf0\par
+\cf2                     \cf4 pin\cf2  = \cf4 sc\cf2 .nextInt();\cf0\par
+\cf2                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter Amount of Money to withdraw: "\cf2 );\cf0\par
+\cf2                     \cf4 amount\cf2 =\cf4 sc\cf2 .nextInt();\cf0\par
+\cf2                     \cf1\b if\cf2\b0 (\i correctPinOrNot\i0 (\cf4 accNo\cf2 ,\cf4 pin\cf2 ))\{\cf0\par
+\cf2                         \cf1\b if\cf2\b0 (\cf4 amount\cf2 >=2000)\{\cf0\par
+\cf2                             \cf1\b if\cf2\b0 (\cf3\i atmOperations\cf2\i0 .withDrawPossible(\cf4 accNo\cf2 ,\cf4 pin\cf2 ,\cf4 amount\cf2 ))\{\cf0\par
+\cf2                                 \cf1\b int\cf2\b0  \cf4 withdrawAmount\cf2 =\cf4 amount\cf2 ;\cf0\par
+\cf2                                 \cf1\b if\cf2\b0 (\cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getValue()>=\cf4 withdrawAmount\cf2 ).count()>1)\{\cf0\par
+\cf2                                     \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==2000).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setValue(\cf4 atm\cf2 .getValue()-\cf4 withdrawAmount\cf2 ));\cf0\par
+\cf2                                     \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==2000).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setNumber(\cf4 atm\cf2 .getNumber()-(\cf4 withdrawAmount\cf2 /2000)));\cf0\par
+\cf2                                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "AMUNT WITHDRWAN"\cf2 );\cf0\par
+\cf2                                 \}\cf0\par
+\cf2                             \}\cf0\par
+\cf2                         \}\cf0\par
+\cf2                         \cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (\cf4 amount\cf2 >=500)\{\cf0\par
+\cf2                             \cf1\b if\cf2\b0 (\cf3\i atmOperations\cf2\i0 .withDrawPossible(\cf4 accNo\cf2 ,\cf4 pin\cf2 ,\cf4 amount\cf2 ))\{\cf0\par
+\cf2                                 \cf1\b int\cf2\b0  \cf4 withdrawAmount\cf2 =\cf4 amount\cf2 ;\cf0\par
+\cf2                                 \cf1\b if\cf2\b0 (\cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getValue()>=\cf4 withdrawAmount\cf2 ).count()>1)\{\cf0\par
+\cf2                                     \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==500).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setValue(\cf4 atm\cf2 .getValue()-\cf4 withdrawAmount\cf2 ));\cf0\par
+\cf2                                     \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==500).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setNumber(\cf4 atm\cf2 .getNumber()-(\cf4 withdrawAmount\cf2 /500)));\cf0\par
+\cf2                                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "AMUNT WITHDRWAN"\cf2 );\cf0\par
+\cf2                                 \}\cf0\par
+\cf2                             \}\cf0\par
+\cf2                         \}\cf0\par
+\cf2                         \cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (\cf4 amount\cf2 >=100)\{\cf0\par
+\cf2                             \cf1\b if\cf2\b0 (\cf3\i atmOperations\cf2\i0 .withDrawPossible(\cf4 accNo\cf2 ,\cf4 pin\cf2 ,\cf4 amount\cf2 ))\{\cf0\par
+\cf2                                 \cf1\b int\cf2\b0  \cf4 withdrawAmount\cf2 =\cf4 amount\cf2 ;\cf0\par
+\cf2                                 \cf1\b if\cf2\b0 (\cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getValue()>=\cf4 withdrawAmount\cf2 ).count()>1)\{\cf0\par
+\cf2                                     \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==100).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setValue(\cf4 atm\cf2 .getValue()-\cf4 withdrawAmount\cf2 ));\cf0\par
+\cf2                                     \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==100).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setNumber(\cf4 atm\cf2 .getNumber()-(\cf4 withdrawAmount\cf2 /100)));\cf0\par
+\cf2                                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "AMUNT WITHDRWAN"\cf2 );\cf0\par
+\cf2                                 \}\cf0\par
+\cf2                             \}\cf0\par
+\cf2                         \}\cf0\par
+\cf2                     \}\cf0\par
+\cf2                 \}\cf0\par
+\cf2                 \cf1\b case\cf2\b0  3->\{\cf0\par
+\cf2                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "You have to chosen Transfer Option\\n"\cf2 );\cf0\par
+\cf2                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Please your Account Number: "\cf2 );\cf0\par
+\cf2                     \cf4 accNo\cf2  = \cf4 sc\cf2 .nextInt();\cf0\par
+\cf2                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter Your Four Digit Pin: "\cf2 );\cf0\par
+\cf2                     \cf4 pin\cf2  = \cf4 sc\cf2 .nextInt();\cf0\par
+\cf2                     System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter Amount of Money to transfer: "\cf2 );\cf0\par
+\cf2                     \cf4 amount\cf2 =\cf4 sc\cf2 .nextInt();\cf0\par
+\cf2                     \cf1\b if\cf2\b0 (\i correctPinOrNot\i0 (\cf4 accNo\cf2 ,\cf4 pin\cf2 ))\{\cf0\par
+\cf2                         \cf1\b if\cf2\b0 (\cf4 amount\cf2 <=10000)\{\cf0\par
+\cf2                             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter Account Number of Your Friend: "\cf2 );\cf0\par
+\cf2                             \cf4 otherAccNo\cf2 = \cf4 sc\cf2 .nextInt();\cf0\par
+\cf2                             \cf1\b if\cf2\b0 (\i correctPinOrNot\i0 (\cf4 otherAccNo\cf2 ))\{\cf0\par
+\cf2                                 \cf1\b if\cf2\b0 (\cf4 amount\cf2 >=2000)\{\cf0\par
+\cf2                                     \cf1\b if\cf2\b0 (\cf3\i atmOperations\cf2\i0 .transferPossible(\cf4 accNo\cf2 ,\cf4 pin\cf2 ,\cf4 amount\cf2 ,\cf4 otherAccNo\cf2 ))\{\cf0\par
+\cf2                                         \cf1\b int\cf2\b0  \cf4 transferAmount\cf2 =\cf4 amount\cf2 ;\cf0\par
+\cf2                                         \cf1\b if\cf2\b0 (\cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getValue()>=\cf4 transferAmount\cf2 ).count()>1)\{\cf0\par
+\par
+\cf2                                             \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==2000).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setValue(\cf4 atm\cf2 .getValue()+\cf4 transferAmount\cf2 ));\cf0\par
+\cf2                                             \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==2000).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setNumber(\cf4 atm\cf2 .getNumber()+\cf4 transferAmount\cf2 /2000));\cf0\par
+\cf2                                             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "AMUNT transferee"\cf2 );\cf0\par
+\cf2                                         \}\cf0\par
+\cf2                                     \}\cf0\par
+\cf2                                 \}\cf0\par
+\cf2                                 \cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (\cf4 amount\cf2 >=500)\{\cf0\par
+\cf2                                     \cf1\b if\cf2\b0 (\cf3\i atmOperations\cf2\i0 .transferPossible(\cf4 accNo\cf2 ,\cf4 pin\cf2 ,\cf4 amount\cf2 ,\cf4 otherAccNo\cf2 ))\{\cf0\par
+\cf2                                         \cf1\b int\cf2\b0  \cf4 transferAmount\cf2 =\cf4 amount\cf2 ;\cf0\par
+\cf2                                         \cf1\b if\cf2\b0 (\cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getValue()>=\cf4 transferAmount\cf2 ).count()>1)\{\cf0\par
+\par
+\cf2                                             \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==2000).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setValue(\cf4 atm\cf2 .getValue()+\cf4 transferAmount\cf2 ));\cf0\par
+\cf2                                             \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==2000).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setNumber(\cf4 atm\cf2 .getNumber()+\cf4 transferAmount\cf2 /500));\cf0\par
+\cf2                                             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "AMUNT transferee"\cf2 );\cf0\par
+\cf2                                         \}\cf0\par
+\cf2                                     \}\cf0\par
+\cf2                                 \}\cf0\par
+\cf2                                 \cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (\cf4 amount\cf2 >=100)\{\cf0\par
+\cf2                                     \cf1\b if\cf2\b0 (\cf3\i atmOperations\cf2\i0 .transferPossible(\cf4 accNo\cf2 ,\cf4 pin\cf2 ,\cf4 amount\cf2 ,\cf4 otherAccNo\cf2 ))\{\cf0\par
+\cf2                                         \cf1\b int\cf2\b0  \cf4 transferAmount\cf2 =\cf4 amount\cf2 ;\cf0\par
+\cf2                                         \cf1\b if\cf2\b0 (\cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getValue()>=\cf4 transferAmount\cf2 ).count()>1)\{\cf0\par
+\par
+\cf2                                             \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==2000).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setValue(\cf4 atm\cf2 .getValue()+\cf4 transferAmount\cf2 ));\cf0\par
+\cf2                                             \cf3\i Atm_attributes\cf2\i0 .stream().filter(\cf4 atm\cf2  -> \cf4 atm\cf2 .getDenomination()==2000).forEach(\cf4 atm\cf2 ->\cf4 atm\cf2 .setNumber(\cf4 atm\cf2 .getNumber()+\cf4 transferAmount\cf2 /100));\cf0\par
+\cf2                                             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "AMUNT transferee"\cf2 );\cf0\par
+\cf2                                         \}\cf0\par
+\cf2                                     \}\cf0\par
+\cf2                                 \}\cf0\par
+\cf2                             \}\cf0\par
+\cf2                         \}\cf0\par
+\cf2                         \cf1\b else\cf2\b0\{\cf0\par
+\cf2                             System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Amount Must be less than 10000"\cf2 );\cf0\par
+\cf2                         \}\cf0\par
+\cf2                     \}\cf0\par
+\par
+\cf2                 \}\cf0\par
+\cf2                 \cf1\b case\cf2\b0  4-> \cf3\i Atm_attributes\cf2\i0 .forEach(System.\cf3\b\i out\cf2\b0\i0 ::println);\cf0\par
+\cf2                 \cf1\b case\cf2\b0  5-> \cf4 condition\cf2 =\cf1\b false\cf2\b0 ;\cf0\par
+\cf2                 \cf1\b default\cf2\b0  -> System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter from 1,2,3,4,5"\cf2 );\cf0\par
+\cf2             \}\cf0\par
+\cf2         \}\cf0\par
+\cf2     \}\cf0\par
+\cf2\}\cf0\lang9\par
+\cf2\tab\cf0\f2\fs22\par
+}
+ 
